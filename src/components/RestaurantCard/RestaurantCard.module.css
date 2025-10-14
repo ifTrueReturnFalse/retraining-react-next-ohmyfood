@@ -1,0 +1,68 @@
+.card {
+  height: 250px;
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.new {
+  background-color: #99E2D0;
+  color: #008766;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 5px;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}
+
+.imageContainer {
+  overflow: hidden;
+  width: 100%; 
+  height: 180px;
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+
+.cardImage {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.cardLegend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0 15px;
+}
+
+.textLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.restaurantName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.heart {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+}
+
+.liked {
+  color: #9356DC;
+}
