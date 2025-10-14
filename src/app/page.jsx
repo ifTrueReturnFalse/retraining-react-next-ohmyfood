@@ -37,6 +37,7 @@ export default function Home() {
                 isNew={restaurant.isNew}
                 restaurantName={restaurant.name}
                 restaurantLocation={restaurant.location}
+                slugLink={restaurant.slug}
               />
             ))}
           </div>

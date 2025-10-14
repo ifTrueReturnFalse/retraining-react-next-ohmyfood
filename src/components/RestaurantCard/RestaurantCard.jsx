@@ -6,12 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as emptyHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as fullHeart } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function RestaurantCard({
   imageLink,
   restaurantName,
   restaurantLocation,
   isNew,
+  slugLink,
 }) {
   const [liked, setLiked] = useState(false);
 
@@ -20,7 +22,7 @@ export default function RestaurantCard({
   };
 
   return (
-    <div className={styles.card}>
+    <Link className={styles.card} href={`/restaurant/${slugLink}`}>
       {isNew && <div className={styles.new}>Nouveau</div>}
       <div className={styles.imageContainer}>
         <Image
@@ -41,6 +43,6 @@ export default function RestaurantCard({
           onClick={handleLike}
         />
       </div>
-    </div>
+    </Link>
   );
 }
