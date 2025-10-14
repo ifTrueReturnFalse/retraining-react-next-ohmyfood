@@ -1,0 +1,17 @@
+.container {
+  max-width: 635px;
+  margin: auto;
+}
+
+.category {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.separator {
+  width: 40px;
+  border-top: 3px solid #99E2D0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
