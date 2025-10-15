@@ -22,16 +22,18 @@ export default function RestaurantCard({
   };
 
   return (
-    <Link className={styles.card} href={`/restaurant/${slugLink}`}>
+    <div className={styles.card}>
       {isNew && <div className={styles.new}>Nouveau</div>}
-      <div className={styles.imageContainer}>
-        <Image
-          src={imageLink}
-          alt="The restaurant image"
-          fill
-          className={styles.cardImage}
-        />
-      </div>
+      <Link href={`/restaurant/${slugLink}`}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={imageLink}
+            alt="The restaurant image"
+            fill
+            className={styles.cardImage}
+          />
+        </div>
+      </Link>
       <div className={styles.cardLegend}>
         <div className={styles.textLegend}>
           <p className={styles.restaurantName}>{restaurantName}</p>
@@ -43,6 +45,6 @@ export default function RestaurantCard({
           onClick={handleLike}
         />
       </div>
-    </Link>
+    </div>
   );
 }

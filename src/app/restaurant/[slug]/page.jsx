@@ -21,6 +21,7 @@ export default function Page({ params }) {
           alt="Restaurant image"
           fill
           className={styles.image}
+          sizes="(max-width: 768px) 10vw, 100vw"
         />
       </div>
 

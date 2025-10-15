@@ -12,7 +12,7 @@
 }
 
 .menuContainer {
-  width: 1055px;
+  max-width: 1055px;
   transform: translateY(-30px);
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
@@ -46,4 +46,14 @@
 .cta:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 200px;
+  }
+  
+  .menuContainer {
+    margin: 0;
+  }
 }

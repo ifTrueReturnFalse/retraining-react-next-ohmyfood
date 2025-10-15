@@ -1,6 +1,6 @@
 .card {
   height: 250px;
-  width: 490px;
+  max-width: 490px;
   display: flex;
   flex-direction: column;
   position: relative;
