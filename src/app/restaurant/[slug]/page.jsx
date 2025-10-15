@@ -5,12 +5,18 @@ import styles from "./page.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import MenuCategory from "@/components/MenuCategory/MenuCategory";
+import { notFound } from "next/navigation";
 
 const { restaurants } = restaurantList;
 
 export default function Page({ params }) {
   const { slug } = use(params);
   const restaurant = restaurants.find((restaurant) => restaurant.slug === slug);
+
+  if (restaurant === undefined) {
+    notFound();
+  }
+
   const { menu } = restaurant;
 
   return (
