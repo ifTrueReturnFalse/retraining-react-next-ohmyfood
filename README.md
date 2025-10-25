@@ -76,7 +76,7 @@ Pour lancer le projet en local, suivez ces étapes :
 
 This is the GitHub repository for a project completed as part of my **AI Developer** training with OpenClassrooms.
 
-The main objective is to develop **"Ohmyfood"**, a "mobile-first" website that lists menus from gourmet restaurants. In addition to setting up the basic site structure, a special focus is placed on implementing advanced CSS animations to enhance the user experience.
+The main objective is to develop **"Ohmyfood"**, a "mobile-first" website that lists menus from gourmet restaurants.
 
 The application is developed with **Next.js** and focuses on the following points:
 
